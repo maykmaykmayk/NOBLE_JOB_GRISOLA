@@ -73,7 +73,7 @@ function editApplicant($pdo, $first_name, $last_name, $age, $gender, $email, $co
                 age = ?,
                 gender = ?,
                 email = ?,
-                contact_info = ?,
+                contact_info = ?
             WHERE applicantID = ?
         ";
     $stmt = $pdo->prepare($query);
